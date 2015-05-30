@@ -25,12 +25,13 @@ var progressBar = new Ractive({
 	
 		var finalValue = existingValue + Number(selValue);
 		if(finalValue < 0){
-		finalValue = 0;
+			finalValue = 0;
 		}
 		var barData = progressBar.set(key,finalValue);
 	}	
 });
 
+//On tap event
 progressBar.on( 'updateProgress', function ( event ) {
 	var currentObject = event;
 	progressBar.setPBarValue(progressBar.get("selectedIndex"),event.context); 

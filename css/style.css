@@ -11,7 +11,7 @@
 
 .bar{
 	height: 100%;
-	-webkit-transition: width 0.2s; /* Safari */
+	-webkit-transition: width 0.2s;
     transition: width 0.2s;
 	transition-timing-function: linear;
 }
