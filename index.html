@@ -24,6 +24,8 @@
 			<header id="header">
 				<h1>Progress Bars Demo</h1>
 			</header>
+			
+			// Foreach loop to create progress bars 
 			{{#each pBarData:i}}
 				<div class='bar-group'>
 					<div class="bar {{ (pBarData[i].value > 100)? 'overflow-color' : 'bar-color'}}" style="width: {{ pBarData[i].value }}%;" id="pBar{{i}}"> </div><span class="bar-text">{{ pBarData[i].value }}%</span>
@@ -31,6 +33,7 @@
 				<br/>
 			{{/each}}			
 			
+			// HTML element containing dropdown to select progress bars and Buttons to update progress
 			<div class="button-panel">
 			<select value='{{selectedIndex}}'>
 			  {{#each pBarData:i}}
