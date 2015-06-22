@@ -10,9 +10,16 @@
 	</head>
 
 	<body>
+		<!--
+		This is the section where Ractive is rendered. 
+		It will contain the compiled HTML Code
+		-->
 		<section id="progressbarapp"></section>
 		
-		<!-- Templates -->
+		<!-- 
+		Following Script tag contains the Ractive Template. 
+		Ractive Parser understands the syntax and creates the DOM 
+		-->
 		<script id="main" type="text/ractive">
 			<header id="header">
 				<h1>Progress Bars Demo</h1>
@@ -36,9 +43,11 @@
 			</div>
 		</script>
 
-		
+		<!-- Latest Ractive JS library -->
 		<script src='js/ractive.min.js'></script>
+		<!-- Tap/FastClick Plugin for Ractive JS -->
 		<script src='js/ractive-events-tap.min.js' type="text/javascript"></script>
+		<!-- App Logic -->
 		<script src="js/app.js"></script>
 	</body>
 </html>
