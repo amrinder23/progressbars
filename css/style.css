@@ -1,3 +1,4 @@
+/* The div containing the bar div */
 .bar-group {
 	position: relative; 
 	width: 100%; 
@@ -9,6 +10,7 @@
 	border-radius: 5px;
 }
 
+/* The div representing the bar */
 .bar{
 	height: 100%;
 	-webkit-transition: width 0.2s;
@@ -16,14 +18,17 @@
 	transition-timing-function: linear;
 }
 
+/* Color of the progress bar when it goes beyond 100 */
 .overflow-color {
 	background-color: #FF0000;
 }
 
+/* Usual color of the progress bars */
 .bar-color {
 	background-color: #99D9EA;
 }
 
+/* Class to center the Progress Percentage text */
 .bar-text {
 	color: #000; 
 	position: absolute; 
